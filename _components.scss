@@ -29,3 +29,10 @@
   align-items: center;
   gap: $default-spacing;
 }
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: $default-spacing;
+  align-items: center;
+}
