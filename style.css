@@ -30,6 +30,12 @@ img {
   font-weight: bold;
 }
 
+.button {
+  padding: 1vh;
+  border: 2px solid;
+  border-radius: 0.7142857143vh;
+}
+
 .header {
   display: none;
 }
@@ -91,4 +97,7 @@ img {
 .projects__skill {
   text-transform: capitalize;
   color: #e85a4f;
+}
+.projects__description {
+  margin: 2.5vh 0;
 }/*# sourceMappingURL=style.css.map */

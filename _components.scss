@@ -68,4 +68,8 @@
     text-transform: capitalize;
     color: $heading-color;
   }
+
+  &__description {
+    margin: $default-spacing/2 0;
+  }
 }

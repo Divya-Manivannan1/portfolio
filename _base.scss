@@ -32,3 +32,9 @@ img {
   color: $heading-color;
   font-weight: bold;
 }
+
+.button {
+  padding: $default-spacing/5;
+  border: 2px solid;
+  border-radius: $default-spacing/7;
+}
