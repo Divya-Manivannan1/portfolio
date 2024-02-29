@@ -1,0 +1,25 @@
+@use "./variable" as *;
+
+.header {
+  display: none;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: $default-spacing;
+
+  &__img {
+    display: none;
+  }
+
+  &__name {
+    font-size: large;
+    color: $heading-color;
+  }
+
+  &__line {
+    font-size:xx-large;
+    color: $heading-color;
+  }
+}
