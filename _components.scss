@@ -35,4 +35,11 @@
   flex-direction: column;
   gap: $default-spacing;
   align-items: center;
+  
+  &__skill-icons {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    gap: $default-spacing;
+  }
+
 }
