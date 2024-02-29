@@ -19,7 +19,13 @@
   }
 
   &__line {
-    font-size:xx-large;
-    color: $heading-color;
+    font-size: xxx-large;
   }
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $default-spacing;
 }
