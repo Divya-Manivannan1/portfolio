@@ -43,4 +43,11 @@ img {
 .intro__line {
   font-size: xx-large;
   color: #e85a4f;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }/*# sourceMappingURL=style.css.map */
