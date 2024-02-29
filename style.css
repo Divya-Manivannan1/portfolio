@@ -24,6 +24,11 @@ img {
   width: 100%;
 }
 
+.subheading {
+  font-size: x-large;
+  color: #e85a4f;
+}
+
 .header {
   display: none;
 }
@@ -41,7 +46,7 @@ img {
   color: #e85a4f;
 }
 .intro__line {
-  font-size: xx-large;
+  font-size: xxx-large;
   color: #e85a4f;
 }
 
