@@ -35,4 +35,12 @@ img {
 }
 .intro__img {
   display: none;
+}
+.intro__name {
+  font-size: large;
+  color: #e85a4f;
+}
+.intro__line {
+  font-size: xx-large;
+  color: #e85a4f;
 }/*# sourceMappingURL=style.css.map */

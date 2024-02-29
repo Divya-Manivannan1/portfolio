@@ -12,4 +12,14 @@
   &__img {
     display: none;
   }
+
+  &__name {
+    font-size: large;
+    color: $heading-color;
+  }
+
+  &__line {
+    font-size:xx-large;
+    color: $heading-color;
+  }
 }
