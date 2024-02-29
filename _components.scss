@@ -51,3 +51,16 @@
     }
   }
 }
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: $default-spacing;
+  align-items: center;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: $default-spacing / 5;
+  }
+}
