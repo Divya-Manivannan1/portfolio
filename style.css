@@ -27,6 +27,7 @@ img {
 .subheading {
   font-size: x-large;
   color: #e85a4f;
+  font-weight: bold;
 }
 
 .header {
@@ -47,7 +48,6 @@ img {
 }
 .intro__line {
   font-size: xxx-large;
-  color: #e85a4f;
 }
 
 .about-me {
