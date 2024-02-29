@@ -1,1 +1,21 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  padding: 20px 50px;
+  background-color: #eae7dc;
+  color: #e98074;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
