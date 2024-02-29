@@ -10,6 +10,7 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   padding: $default-spacing * 0.7;
+  padding-bottom: 0;
   background-color: $background-color;
   color: $text-color;
   display: flex;
@@ -34,7 +35,7 @@ img {
 }
 
 .button {
-  padding: $default-spacing/5;
+  padding: calc($default-spacing/5);
   border: 2px solid;
-  border-radius: $default-spacing/7;
+  border-radius: calc($default-spacing/7);
 }

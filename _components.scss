@@ -57,11 +57,12 @@
   flex-direction: column;
   gap: $default-spacing;
   align-items: center;
+  justify-content: center;
 
   &__card {
     display: flex;
     flex-direction: column;
-    gap: $default-spacing / 5;
+    gap: calc($default-spacing / 5);
   }
 
   &__skill {
@@ -70,6 +71,23 @@
   }
 
   &__description {
-    margin: $default-spacing/2 0;
+    margin: calc($default-spacing/2) 0;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: $grey-color;
+  width: 100vw;
+  padding: $default-spacing;
+  gap: calc($default-spacing / 2);
+  align-items: center;
+  color:$background-color;
+
+  &__navigation {
+    display: flex;
+    align-items: space-between;
+    gap: calc($default-spacing/5);
   }
 }
