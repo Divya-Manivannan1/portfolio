@@ -118,4 +118,23 @@ img {
   display: flex;
   align-items: space-between;
   gap: 1vh;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 7.5vh;
+    padding-bottom: 0;
+  }
+  .header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__name {
+    color: #e85a4f;
+  }
+  .header__link {
+    margin: 2.5vh;
+  }
 }/*# sourceMappingURL=style.css.map */
