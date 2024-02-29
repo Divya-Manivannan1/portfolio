@@ -1,6 +1,15 @@
 @use "./variable" as *;
 
-.header{
-    display:none;
+.header {
+  display: none;
 }
 
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: $default-spacing;
+
+  &__img {
+    display: none;
+  }
+}
