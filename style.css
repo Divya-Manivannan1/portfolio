@@ -87,4 +87,8 @@ img {
   display: flex;
   flex-direction: column;
   gap: 1vh;
+}
+.projects__skill {
+  text-transform: capitalize;
+  color: #e85a4f;
 }/*# sourceMappingURL=style.css.map */
