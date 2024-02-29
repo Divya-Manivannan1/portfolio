@@ -6,12 +6,12 @@
 
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  padding: 20px 50px;
+  padding: 3.5vh;
   background-color: #eae7dc;
   color: #e98074;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 10vh;
   align-items: center;
 }
 
@@ -37,7 +37,7 @@ img {
 .intro {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 5vh;
 }
 .intro__img {
   display: none;
@@ -54,5 +54,25 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 5vh;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  align-items: center;
+  width: 100%;
+}
+.skills__skill-icons {
+  display: grid;
+  grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
+  gap: 5vh;
+  width: 100%;
+}
+.skills__icon {
+  text-align: center;
+}
+.skills__icon img {
+  aspect-ratio: 1/1;
 }/*# sourceMappingURL=style.css.map */

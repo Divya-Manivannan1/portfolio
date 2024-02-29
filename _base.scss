@@ -9,12 +9,12 @@
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  padding: 20px 50px;
+  padding: $default-spacing * 0.7;
   background-color: $background-color;
   color: $text-color;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: $default-spacing * 2;
   align-items: center;
 }
 
