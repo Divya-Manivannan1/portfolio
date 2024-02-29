@@ -7,6 +7,7 @@
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   padding: 3.5vh;
+  padding-bottom: 0;
   background-color: #eae7dc;
   color: #e98074;
   display: flex;
@@ -28,6 +29,12 @@ img {
   font-size: x-large;
   color: #e85a4f;
   font-weight: bold;
+}
+
+.button {
+  padding: 1vh;
+  border: 2px solid;
+  border-radius: 0.7142857143vh;
 }
 
 .header {
@@ -75,4 +82,40 @@ img {
 }
 .skills__icon img {
   aspect-ratio: 1/1;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  align-items: center;
+  justify-content: center;
+}
+.projects__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.projects__skill {
+  text-transform: capitalize;
+  color: #e85a4f;
+}
+.projects__description {
+  margin: 2.5vh 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: #8d8e8a;
+  width: 100vw;
+  padding: 5vh;
+  gap: 2.5vh;
+  align-items: center;
+  color: #eae7dc;
+}
+.footer__navigation {
+  display: flex;
+  align-items: space-between;
+  gap: 1vh;
 }/*# sourceMappingURL=style.css.map */
