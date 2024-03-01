@@ -35,6 +35,7 @@ img {
   padding: 1vh;
   border: 2px solid;
   border-radius: 0.7142857143vh;
+  display: block;
 }
 
 .header {
@@ -120,6 +121,13 @@ img {
   gap: 1vh;
 }
 
+.header__navigation,
+.projects__nav {
+  display: flex;
+  gap: 5vh;
+  align-items: center;
+}
+
 @media screen and (min-width: 1024px) {
   body {
     padding: 7.5vh;
@@ -181,10 +189,10 @@ img {
     display: grid;
     grid-template: 1fr 4fr 4fr/1fr 1fr 1fr;
     grid-template-areas: "subheading subheading subheading" "card1 card2 card3" "card4 card5 card6";
-    text-align: center;
   }
   .projects__subheading {
     grid-area: subheading;
+    text-align: center;
   }
   .projects__card:nth-of-type(1) {
     grid-area: card1;
