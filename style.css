@@ -38,6 +38,12 @@ img {
   display: block;
 }
 
+svg {
+  fill: #e98074;
+  width: 15vw;
+  height: 15vw;
+}
+
 .header {
   display: none;
 }
@@ -119,6 +125,14 @@ img {
   display: flex;
   align-items: space-between;
   gap: 1vh;
+}
+.footer__svg {
+  fill: #eae7dc;
+  width: 5vh;
+  height: 5vh;
+}
+.footer .__svg--fill path {
+  fill: #8d8e8a;
 }
 
 .header__navigation,
@@ -215,5 +229,9 @@ img {
   .footer {
     flex-direction: row;
     justify-content: space-between;
+  }
+  svg {
+    height: 6vw;
+    width: 6vw;
   }
 }/*# sourceMappingURL=style.css.map */
