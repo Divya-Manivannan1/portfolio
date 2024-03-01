@@ -90,6 +90,17 @@
     align-items: space-between;
     gap: calc($default-spacing/5);
   }
+
+  &__svg {
+    fill: $background-color;
+    width: $default-spacing;
+    height: $default-spacing;
+  }
+  .__svg--fill {
+    path {
+      fill: $grey-color;
+    }
+  }
 }
 
 .header__navigation,

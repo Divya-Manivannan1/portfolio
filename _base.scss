@@ -40,3 +40,9 @@ img {
   border-radius: calc($default-spacing/7);
   display: block;
 }
+
+svg {
+  fill: $text-color;
+  width: 15vw;
+  height: 15vw;
+}
