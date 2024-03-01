@@ -154,20 +154,27 @@ img {
   .intro__line {
     grid-area: line1;
   }
-}
-.about-me {
-  display: grid;
-  grid-template: 1fr 4fr/1fr 2fr;
-  grid-template-areas: "img subheading" "img details";
-  gap: 0;
-}
-.about-me__img {
-  grid-area: img;
-}
-.about-me__subheading {
-  grid-area: subheading;
-  align-self: self-end;
-}
-.about-me__details {
-  grid-area: details;
+  .about-me {
+    display: grid;
+    grid-template: 1fr 4fr/1fr 2fr;
+    grid-template-areas: "img subheading" "img details";
+    gap: 0;
+  }
+  .about-me__img {
+    grid-area: img;
+  }
+  .about-me__subheading {
+    grid-area: subheading;
+    align-self: self-end;
+  }
+  .about-me__details {
+    grid-area: details;
+  }
+  .skills__skill-icons {
+    display: flex;
+    justify-content: center;
+  }
+  .skills__details {
+    width: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */

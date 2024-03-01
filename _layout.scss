@@ -43,26 +43,38 @@
       grid-area: line1;
     }
   }
-}
 
-.about-me {
-  display: grid;
-  grid-template: 1fr 4fr / 1fr 2fr;
-  grid-template-areas:
-    "img subheading"
-    "img details";
-  gap: 0;
+  .about-me {
+    display: grid;
+    grid-template: 1fr 4fr / 1fr 2fr;
+    grid-template-areas:
+      "img subheading"
+      "img details";
+    gap: 0;
 
-  &__img {
-    grid-area: img;
+    &__img {
+      grid-area: img;
+    }
+
+    &__subheading {
+      grid-area: subheading;
+      align-self: self-end;
+    }
+
+    &__details {
+      grid-area: details;
+    }
   }
 
-  &__subheading {
-    grid-area: subheading;
-    align-self: self-end;
-  }
+  .skills {
 
-  &__details {
-    grid-area: details;
+    &__skill-icons {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__details{
+        width: 50%;
+    }
   }
 }
