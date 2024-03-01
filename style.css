@@ -177,4 +177,31 @@ img {
   .skills__details {
     width: 50%;
   }
+  .projects {
+    display: grid;
+    grid-template: 1fr 4fr 4fr/1fr 1fr 1fr;
+    grid-template-areas: "subheading subheading subheading" "card1 card2 card3" "card4 card5 card6";
+    text-align: center;
+  }
+  .projects__subheading {
+    grid-area: subheading;
+  }
+  .projects__card:nth-of-type(1) {
+    grid-area: card1;
+  }
+  .projects__card:nth-of-type(2) {
+    grid-area: card2;
+  }
+  .projects__card:nth-of-type(3) {
+    grid-area: card3;
+  }
+  .projects__card:nth-of-type(4) {
+    grid-area: card4;
+  }
+  .projects__card:nth-of-type(5) {
+    grid-area: card5;
+  }
+  .projects__card:nth-of-type(6) {
+    grid-area: card6;
+  }
 }/*# sourceMappingURL=style.css.map */

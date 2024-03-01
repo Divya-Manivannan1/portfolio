@@ -67,14 +67,46 @@
   }
 
   .skills {
-
     &__skill-icons {
       display: flex;
       justify-content: center;
     }
 
-    &__details{
-        width: 50%;
+    &__details {
+      width: 50%;
+    }
+  }
+
+  .projects {
+    display: grid;
+    grid-template: 1fr 4fr 4fr/ 1fr 1fr 1fr;
+    grid-template-areas:
+      "subheading subheading subheading"
+      "card1 card2 card3"
+      "card4 card5 card6";
+    text-align: center;
+
+    &__subheading {
+      grid-area: subheading;
+    }
+
+    &__card:nth-of-type(1) {
+      grid-area: card1;
+    }
+    &__card:nth-of-type(2) {
+      grid-area: card2;
+    }
+    &__card:nth-of-type(3) {
+      grid-area: card3;
+    }
+    &__card:nth-of-type(4) {
+      grid-area: card4;
+    }
+    &__card:nth-of-type(5) {
+      grid-area: card5;
+    }
+    &__card:nth-of-type(6) {
+      grid-area: card6;
     }
   }
 }
