@@ -83,11 +83,18 @@
   padding: $default-spacing;
   gap: calc($default-spacing / 2);
   align-items: center;
-  color:$background-color;
+  color: $background-color;
 
   &__navigation {
     display: flex;
     align-items: space-between;
     gap: calc($default-spacing/5);
   }
+}
+
+.header__navigation,
+.projects__nav {
+  display: flex;
+  gap: $default-spacing;
+  align-items: center;
 }

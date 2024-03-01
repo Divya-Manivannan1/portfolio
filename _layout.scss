@@ -84,10 +84,9 @@
       "subheading subheading subheading"
       "card1 card2 card3"
       "card4 card5 card6";
-    text-align: center;
-
     &__subheading {
       grid-area: subheading;
+      text-align: center;
     }
 
     &__card:nth-of-type(1) {
