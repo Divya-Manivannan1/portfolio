@@ -109,4 +109,9 @@
       grid-area: card6;
     }
   }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
