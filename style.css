@@ -153,6 +153,21 @@ img {
   }
   .intro__line {
     grid-area: line1;
-    align-self: center;
   }
+}
+.about-me {
+  display: grid;
+  grid-template: 1fr 4fr/1fr 2fr;
+  grid-template-areas: "img subheading" "img details";
+  gap: 0;
+}
+.about-me__img {
+  grid-area: img;
+}
+.about-me__subheading {
+  grid-area: subheading;
+  align-self: self-end;
+}
+.about-me__details {
+  grid-area: details;
 }/*# sourceMappingURL=style.css.map */

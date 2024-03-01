@@ -41,7 +41,28 @@
 
     &__line {
       grid-area: line1;
-      align-self: center;
     }
+  }
+}
+
+.about-me {
+  display: grid;
+  grid-template: 1fr 4fr / 1fr 2fr;
+  grid-template-areas:
+    "img subheading"
+    "img details";
+  gap: 0;
+
+  &__img {
+    grid-area: img;
+  }
+
+  &__subheading {
+    grid-area: subheading;
+    align-self: self-end;
+  }
+
+  &__details {
+    grid-area: details;
   }
 }
