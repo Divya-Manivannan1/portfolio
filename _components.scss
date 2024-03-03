@@ -1,14 +1,50 @@
 @use "./variable" as *;
 
+/* Sections of the page with similar flex display are grouped together */
+.intro,
+.about-me,
+.skills,
+.projects,
+.footer, .body {
+  display: flex;
+  flex-direction: column;
+  gap: $default-spacing;
+  align-items: center;
+}
+
 .header {
   display: none;
 }
 
-.intro {
+/* Since the header display is set to none, the folowing styles will not be visible in a mobile display */
+.header {
   display: flex;
-  flex-direction: column;
-  gap: $default-spacing;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 
+  &__name {
+    color: $heading-color;
+  }
+
+  &__link {
+    margin: calc($default-spacing / 2);
+  }
+}
+
+/* Navigations in header, projects and footer are set to flex */
+.header,
+.projects,
+footer {
+  &__nav {
+    display: flex;
+    gap: $default-spacing;
+    align-items: center;
+  }
+}
+
+
+.intro {
   &__img {
     display: none;
   }
@@ -23,18 +59,7 @@
   }
 }
 
-.about-me {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: $default-spacing;
-}
-
 .skills {
-  display: flex;
-  flex-direction: column;
-  gap: $default-spacing;
-  align-items: center;
   width: 100%;
 
   &__skill-icons {
@@ -53,12 +78,6 @@
 }
 
 .projects {
-  display: flex;
-  flex-direction: column;
-  gap: $default-spacing;
-  align-items: center;
-  justify-content: center;
-
   &__card {
     display: flex;
     flex-direction: column;
@@ -76,36 +95,21 @@
 }
 
 .footer {
-  display: flex;
   flex-direction: column-reverse;
-  background-color: $grey-color;
+  background-color: $accent-color-1;
   width: 100vw;
   padding: $default-spacing;
   gap: calc($default-spacing / 2);
-  align-items: center;
   color: $background-color;
-
-  &__navigation {
-    display: flex;
-    align-items: space-between;
-    gap: calc($default-spacing/5);
-  }
 
   &__svg {
     fill: $background-color;
     width: $default-spacing;
     height: $default-spacing;
   }
-  .__svg--fill {
+  &__svg--fill {
     path {
-      fill: $grey-color;
+      fill: $accent-color-1;
     }
   }
-}
-
-.header__navigation,
-.projects__nav {
-  display: flex;
-  gap: $default-spacing;
-  align-items: center;
 }

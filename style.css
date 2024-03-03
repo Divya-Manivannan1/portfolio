@@ -44,15 +44,45 @@ svg {
   height: 15vw;
 }
 
+/* Sections of the page with similar flex display are grouped together */
+.intro,
+.about-me,
+.skills,
+.projects,
+.footer, .body {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  align-items: center;
+}
+
 .header {
   display: none;
 }
 
-.intro {
+/* Since the header display is set to none, the folowing styles will not be visible in a mobile display */
+.header {
   display: flex;
-  flex-direction: column;
-  gap: 5vh;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
+.header__name {
+  color: #e85a4f;
+}
+.header__link {
+  margin: 2.5vh;
+}
+
+/* Navigations in header, projects and footer are set to flex */
+.header__nav,
+.projects__nav,
+footer__nav {
+  display: flex;
+  gap: 5vh;
+  align-items: center;
+}
+
 .intro__img {
   display: none;
 }
@@ -64,18 +94,7 @@ svg {
   font-size: xxx-large;
 }
 
-.about-me {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5vh;
-}
-
 .skills {
-  display: flex;
-  flex-direction: column;
-  gap: 5vh;
-  align-items: center;
   width: 100%;
 }
 .skills__skill-icons {
@@ -91,13 +110,6 @@ svg {
   aspect-ratio: 1/1;
 }
 
-.projects {
-  display: flex;
-  flex-direction: column;
-  gap: 5vh;
-  align-items: center;
-  justify-content: center;
-}
 .projects__card {
   display: flex;
   flex-direction: column;
@@ -112,52 +124,26 @@ svg {
 }
 
 .footer {
-  display: flex;
   flex-direction: column-reverse;
   background-color: #8d8e8a;
   width: 100vw;
   padding: 5vh;
   gap: 2.5vh;
-  align-items: center;
   color: #eae7dc;
-}
-.footer__navigation {
-  display: flex;
-  align-items: space-between;
-  gap: 1vh;
 }
 .footer__svg {
   fill: #eae7dc;
   width: 5vh;
   height: 5vh;
 }
-.footer .__svg--fill path {
+.footer__svg--fill path {
   fill: #8d8e8a;
-}
-
-.header__navigation,
-.projects__nav {
-  display: flex;
-  gap: 5vh;
-  align-items: center;
 }
 
 @media screen and (min-width: 1024px) {
   body {
     padding: 7.5vh;
     padding-bottom: 0;
-  }
-  .header {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .header__name {
-    color: #e85a4f;
-  }
-  .header__link {
-    margin: 2.5vh;
   }
   .intro {
     display: grid;
