@@ -19,6 +19,16 @@ body {
 a {
   text-decoration: inherit;
   color: inherit;
+  display: block;
+}
+
+a:hover {
+  color: #e85a4f;
+  transform: scale(1.2);
+}
+
+a:active {
+  text-decoration: underline;
 }
 
 img {
@@ -35,7 +45,6 @@ img {
   padding: 1em;
   border: 2px solid;
   border-radius: 1em;
-  display: block;
 }
 
 svg {

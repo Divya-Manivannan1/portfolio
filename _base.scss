@@ -22,6 +22,16 @@ body {
 a {
   text-decoration: inherit;
   color: inherit;
+  display: block;
+}
+
+a:hover {
+  color: $heading-color;
+  transform: scale(1.2);
+}
+
+a:active {
+  text-decoration: underline;
 }
 
 img {
@@ -38,7 +48,6 @@ img {
   padding: $default-margin;
   border: 2px solid;
   border-radius: $default-margin;
-  display: block;
 }
 
 svg {
