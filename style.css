@@ -124,6 +124,12 @@ svg {
   flex-direction: column;
   padding: 2em;
 }
+.projects__card:hover {
+  box-shadow: 0 0 1rem 0 #3c3a3a;
+}
+.projects__image {
+  box-shadow: 0 -1rem 0 1rem #3c3a3a;
+}
 .projects__type {
   font-family: "Source Sans 3", sans-serif;
 }

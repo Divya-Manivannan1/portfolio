@@ -68,10 +68,19 @@
 
 .projects {
   gap: calc($default-spacing * 0.75);
+  
   &__card {
     display: flex;
     flex-direction: column;
     padding: calc($default-margin * 2);
+  }
+
+  &__card:hover {
+    box-shadow: 0 0 1rem 0 $accent-color-2;
+  }
+
+  &__image {
+    box-shadow: 0 -1rem 0 1rem $accent-color-2;
   }
 
   &__type {
