@@ -29,6 +29,10 @@
 }
 
 .intro {
+  font-family: $font-desc;
+  font-style: italic;
+  font-weight: 600;
+  align-items: unset;
   &__img {
     display: none;
   }
