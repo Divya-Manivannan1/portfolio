@@ -11,6 +11,10 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    padding-top: $default-margin;
+    background-color: $background-color;
 
     &__name {
       color: $heading-color;
