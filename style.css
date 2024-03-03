@@ -10,8 +10,8 @@ body {
   font-weight: 500;
   padding: 3em;
   padding-bottom: 0;
-  background-color: #eae7dc;
-  color: #e98074;
+  background-color: #f2f2f2;
+  color: #a1253b;
   display: flex;
   flex-direction: column;
   gap: 6rem;
@@ -20,12 +20,12 @@ body {
 
 a {
   text-decoration: inherit;
-  color: inherit;
+  color: #3c3a3a;
   display: block;
 }
 
 a:hover {
-  color: #e85a4f;
+  color: #630008;
   transform: scale(1.2);
 }
 
@@ -40,18 +40,18 @@ img {
 .subheading {
   font-family: "Lora", serif;
   font-size: 2rem;
-  color: #e85a4f;
+  color: #011126;
   font-weight: 700;
 }
 
 .button {
-  padding: 1em;
+  padding: 0.5em;
   border: 2px solid;
   border-radius: 1em;
 }
 
 svg {
-  fill: #e98074;
+  fill: #a1253b;
   width: 12vw;
   height: 12vw;
 }
@@ -74,7 +74,7 @@ svg {
 .projects__nav,
 .footer__nav {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
 }
 
@@ -93,7 +93,7 @@ svg {
 }
 .intro__name {
   font-size: 1.5rem;
-  color: #e85a4f;
+  color: #011126;
 }
 .intro__line {
   font-size: 3rem;
@@ -116,14 +116,20 @@ svg {
   aspect-ratio: 1/1;
 }
 
+.projects {
+  gap: 1.5rem;
+}
 .projects__card {
   display: flex;
   flex-direction: column;
-  margin: 1.5em;
+  padding: 2em;
+}
+.projects__type {
+  font-family: "Source Sans 3", sans-serif;
 }
 .projects__skill {
   text-transform: capitalize;
-  color: #e85a4f;
+  color: #011126;
 }
 .projects__description {
   margin: 1em 0;
@@ -131,19 +137,25 @@ svg {
 
 .footer {
   flex-direction: column-reverse;
-  background-color: #8d8e8a;
+  background-color: #630008;
   width: 100vw;
   padding: 2em;
   gap: 1rem;
-  color: #eae7dc;
+  color: #f2f2f2;
+}
+.footer__email {
+  color: inherit;
+}
+.footer__email:hover {
+  color: #f2f2f2;
 }
 .footer__svg {
-  fill: #eae7dc;
+  fill: #f2f2f2;
   width: 2rem;
   height: 2rem;
 }
 .footer__svg--fill path {
-  fill: #8d8e8a;
+  fill: #630008;
 }
 
 @media screen and (min-width: 1024px) {
@@ -158,7 +170,7 @@ svg {
     align-items: center;
   }
   .header__name {
-    color: #e85a4f;
+    color: #011126;
   }
   .intro {
     display: grid;
