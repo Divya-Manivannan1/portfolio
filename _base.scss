@@ -21,12 +21,12 @@ body {
 
 a {
   text-decoration: inherit;
-  color: inherit;
+  color: $accent-color-2;
   display: block;
 }
 
 a:hover {
-  color: $heading-color;
+  color: $accent-color-1;
   transform: scale(1.2);
 }
 
@@ -46,7 +46,7 @@ img {
 }
 
 .button {
-  padding: $default-margin;
+  padding: calc($default-margin / 2);
   border: 2px solid;
   border-radius: $default-margin;
 }

@@ -19,7 +19,7 @@
 .footer {
   &__nav {
     display: flex;
-    gap: $default-spacing;
+    gap: calc($default-spacing / 2);
     align-items: center;
   }
 }
@@ -67,12 +67,17 @@
 }
 
 .projects {
+  gap: calc($default-spacing * 0.75);
   &__card {
     display: flex;
     flex-direction: column;
-    margin: calc($default-margin * 1.5);
+    padding: calc($default-margin * 2);
   }
 
+  &__type {
+    font-family: $font-desc;
+  }
+  
   &__skill {
     text-transform: capitalize;
     color: $heading-color;
@@ -90,6 +95,14 @@
   padding: calc($default-margin * 2);
   gap: calc($default-spacing / 2);
   color: $background-color;
+
+  &__email {
+    color: inherit;
+  }
+
+  &__email:hover {
+    color: $background-color;
+  }
 
   &__svg {
     fill: $background-color;
