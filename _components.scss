@@ -5,37 +5,18 @@
 .about-me,
 .skills,
 .projects,
-.footer, .body {
+.footer,
+.body {
   display: flex;
   flex-direction: column;
-  gap: $default-spacing;
+  gap: calc($default-spacing / 2);
   align-items: center;
-}
-
-.header {
-  display: none;
-}
-
-/* Since the header display is set to none, the folowing styles will not be visible in a mobile display */
-.header {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-
-  &__name {
-    color: $heading-color;
-  }
-
-  &__link {
-    margin: calc($default-spacing / 2);
-  }
 }
 
 /* Navigations in header, projects and footer are set to flex */
 .header,
 .projects,
-footer {
+.footer {
   &__nav {
     display: flex;
     gap: $default-spacing;
@@ -43,6 +24,9 @@ footer {
   }
 }
 
+.header {
+  display: none;
+}
 
 .intro {
   &__img {
@@ -50,12 +34,12 @@ footer {
   }
 
   &__name {
-    font-size: large;
+    font-size: 1.5rem;
     color: $heading-color;
   }
 
   &__line {
-    font-size: xxx-large;
+    font-size: 3rem;
   }
 }
 
@@ -65,15 +49,16 @@ footer {
   &__skill-icons {
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
-    gap: $default-spacing;
     width: 100%;
   }
 
   &__icon {
     text-align: center;
+    font-size: 0.75rem;
     img {
       aspect-ratio: 1 / 1;
     }
+    margin: calc($default-margin / 2);
   }
 }
 
@@ -81,7 +66,7 @@ footer {
   &__card {
     display: flex;
     flex-direction: column;
-    gap: calc($default-spacing / 5);
+    margin: calc($default-margin * 1.5);
   }
 
   &__skill {
@@ -90,7 +75,7 @@ footer {
   }
 
   &__description {
-    margin: calc($default-spacing/2) 0;
+    margin: $default-margin 0;
   }
 }
 
@@ -98,7 +83,7 @@ footer {
   flex-direction: column-reverse;
   background-color: $accent-color-1;
   width: 100vw;
-  padding: $default-spacing;
+  padding: calc($default-margin * 2);
   gap: calc($default-spacing / 2);
   color: $background-color;
 

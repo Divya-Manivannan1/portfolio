@@ -9,13 +9,13 @@
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  padding: $default-spacing * 0.7;
+  padding: calc($default-margin * 3);
   padding-bottom: 0;
   background-color: $background-color;
   color: $text-color;
   display: flex;
   flex-direction: column;
-  gap: $default-spacing * 2;
+  gap: calc($default-spacing * 3);
   align-items: center;
 }
 
@@ -29,20 +29,20 @@ img {
 }
 
 .subheading {
-  font-size: x-large;
+  font-size: 2rem;
   color: $heading-color;
   font-weight: bold;
 }
 
 .button {
-  padding: calc($default-spacing/5);
+  padding: $default-margin;
   border: 2px solid;
-  border-radius: calc($default-spacing/7);
+  border-radius: $default-margin;
   display: block;
 }
 
 svg {
   fill: $text-color;
-  width: 15vw;
-  height: 15vw;
+  width: 12vw;
+  height: 12vw;
 }
