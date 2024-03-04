@@ -29,7 +29,7 @@
       "line1 img";
     gap: 0;
 
-    &__img {
+    &__image {
       display: unset;
       grid-area: img;
     }
@@ -46,13 +46,10 @@
 
   .about-me {
     display: grid;
-    grid-template: 1fr 4fr / 1fr 2fr;
-    grid-template-areas:
-      "img subheading"
-      "img details";
-    gap: 0;
-
-    &__img {
+    grid-template: 1fr 1fr/ 2fr 3fr;
+    grid-template-areas: "img subheading" "img details";
+    gap: calc($default-spacing * 3);
+    &__image-container {
       grid-area: img;
     }
 
@@ -63,6 +60,7 @@
 
     &__details {
       grid-area: details;
+      align-self: self-start;
     }
   }
 
