@@ -33,7 +33,7 @@
   font-style: italic;
   font-weight: 600;
   align-items: unset;
-  &__img {
+  &__image {
     display: none;
   }
 
@@ -44,6 +44,21 @@
 
   &__line {
     font-size: 3rem;
+  }
+}
+
+.about-me {
+  &__image-container {
+    background-color: $text-color;
+    background-image: url("./images/Profile-pic-2.jpg");
+  }
+  &__image {
+    aspect-ratio: 960 / 1280;
+    transition: 0.5s;
+    width: 100%;
+  }
+  &__image:hover {
+    opacity: 0;
   }
 }
 
@@ -68,16 +83,25 @@
 
 .projects {
   gap: calc($default-spacing * 0.75);
+
   &__card {
     display: flex;
     flex-direction: column;
     padding: calc($default-margin * 2);
   }
 
+  &__card:hover {
+    box-shadow: 0 0 1rem 0 $accent-color-2;
+  }
+
+  &__image {
+    box-shadow: 0 -1rem 0 1rem $accent-color-2;
+  }
+
   &__type {
     font-family: $font-desc;
   }
-  
+
   &__skill {
     text-transform: capitalize;
     color: $heading-color;

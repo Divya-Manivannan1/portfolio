@@ -88,7 +88,7 @@ svg {
   font-weight: 600;
   align-items: unset;
 }
-.intro__img {
+.intro__image {
   display: none;
 }
 .intro__name {
@@ -97,6 +97,19 @@ svg {
 }
 .intro__line {
   font-size: 3rem;
+}
+
+.about-me__image-container {
+  background-color: #a1253b;
+  background-image: url("./images/Profile-pic-2.jpg");
+}
+.about-me__image {
+  aspect-ratio: 960/1280;
+  transition: 0.5s;
+  width: 100%;
+}
+.about-me__image:hover {
+  opacity: 0;
 }
 
 .skills {
@@ -123,6 +136,12 @@ svg {
   display: flex;
   flex-direction: column;
   padding: 2em;
+}
+.projects__card:hover {
+  box-shadow: 0 0 1rem 0 #3c3a3a;
+}
+.projects__image {
+  box-shadow: 0 -1rem 0 1rem #3c3a3a;
 }
 .projects__type {
   font-family: "Source Sans 3", sans-serif;
@@ -168,6 +187,10 @@ svg {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    padding-top: 1em;
+    background-color: #f2f2f2;
   }
   .header__name {
     color: #011126;
@@ -178,7 +201,7 @@ svg {
     grid-template-areas: "name img" "line1 img";
     gap: 0;
   }
-  .intro__img {
+  .intro__image {
     display: unset;
     grid-area: img;
   }
@@ -191,11 +214,11 @@ svg {
   }
   .about-me {
     display: grid;
-    grid-template: 1fr 4fr/1fr 2fr;
+    grid-template: 1fr 1fr/2fr 3fr;
     grid-template-areas: "img subheading" "img details";
-    gap: 0;
+    gap: 6rem;
   }
-  .about-me__img {
+  .about-me__image-container {
     grid-area: img;
   }
   .about-me__subheading {
@@ -204,6 +227,7 @@ svg {
   }
   .about-me__details {
     grid-area: details;
+    align-self: self-start;
   }
   .skills__skill-icons {
     display: flex;
