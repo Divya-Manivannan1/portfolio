@@ -51,6 +51,7 @@
   &__image-container {
     background-color: $text-color;
     background-image: url("./images/Profile-pic-2.jpg");
+    background-size: 100%;
   }
   &__image {
     aspect-ratio: 960 / 1280;
